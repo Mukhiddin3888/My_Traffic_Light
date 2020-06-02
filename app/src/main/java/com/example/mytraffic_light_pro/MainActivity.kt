@@ -28,10 +28,10 @@ class MainActivity : Activity() {
         if (!isRun) {
             startStop()
             isRun = true
-            view.setImageResource(R.drawable.start)
+            view.setImageResource(R.drawable.stop)
 
         } else {
-            view.setImageResource(R.drawable.stop)
+            view.setImageResource(R.drawable.start)
             myImage?.setImageResource(R.drawable.yellow1)
             isRun = false
             time?.cancel()
@@ -51,6 +51,6 @@ class MainActivity : Activity() {
 
             }
 
-        }, 0, 1000)
+        }, 0, 1500)
     }
 }
